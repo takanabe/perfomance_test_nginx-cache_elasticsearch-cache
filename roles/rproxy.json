@@ -1,0 +1,16 @@
+{
+  "name": "rproxy",
+  "default_attributes": {
+    "nginx": {
+      "default_site_enabled": false
+    }
+  },
+
+  "json_class": "Chef::Role",
+  "description": "",
+  "chef_type": "role",
+  "run_list": [
+    "nginx",
+    "recipe[ex1-nginx::default]"
+  ]
+}
