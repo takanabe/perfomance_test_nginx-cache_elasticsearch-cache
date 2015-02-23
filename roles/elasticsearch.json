@@ -1,0 +1,21 @@
+{
+    "name": "elasticsearch",
+    "default_attributes": {},
+    "override_attributes": {
+        "java": {
+            "install_flavor": "openjdk",
+            "jdk_version": "7"
+        },
+        "elasticsearch": {
+            "version": "1.3.2"
+        }
+    },
+    "json_class": "Chef::Role",
+    "description": "",
+    "chef_type": "role",
+    "run_list": [
+        "recipe[elasticsearch]",
+        "recipe[elasticsearch::plugins]"
+    ]
+}
+
