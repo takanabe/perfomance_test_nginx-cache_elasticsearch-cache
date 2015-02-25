@@ -39,11 +39,11 @@ template "#{node['nginx']['dir']}/sites-available/default_site" do
   notifies :reload, 'service[nginx]'
 end
 
-link "#{node['nginx']['dir']}/sites-enabled/default_site" do
-  owner "root"
-  to "#{node['nginx']['dir']}/sites-available/default_site"
-  notifies :reload, 'service[nginx]'
-end
+# link "#{node['nginx']['dir']}/sites-enabled/default_site" do
+#   owner "root"
+#   to "#{node['nginx']['dir']}/sites-available/default_site"
+#   notifies :reload, 'service[nginx]'
+# end
 #
 # logrotate_app 'nginx' do
 #   cookbook  'logrotate'

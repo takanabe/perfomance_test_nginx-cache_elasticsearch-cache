@@ -1,6 +1,6 @@
 server {
     listen   80;
-    server_name ~.*;
+    server_name 127.0.0.1;
 
     location / {
         root   /var/www/nginx-default;
@@ -9,7 +9,7 @@ server {
 }
 
 server {
-  server_name comolib.api;
+  server_name <%= node['fqdn'] %>;
   proxy_set_header Host $http_host;
   location / {
     proxy_pass http://127.0.0.1:9200;
