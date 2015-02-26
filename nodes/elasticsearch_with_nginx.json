@@ -1,6 +1,6 @@
 {
   "run_list": [
     "role[rproxy]",
-    "role[elasticsearch]"
+    "role[elasticsearch-with_nginx]"
   ]
 }

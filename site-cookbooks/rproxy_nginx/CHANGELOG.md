@@ -1,11 +1,11 @@
-ex1-nginx CHANGELOG
-===================
+rproxy_nginx CHANGELOG
+======================
 
-This file is used to list changes made in each version of the ex1-nginx cookbook.
+This file is used to list changes made in each version of the rproxy_nginx cookbook.
 
 0.1.0
 -----
-- [your_name] - Initial release of ex1-nginx
+- [your_name] - Initial release of rproxy_nginx
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

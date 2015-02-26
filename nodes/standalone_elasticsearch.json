@@ -1,0 +1,6 @@
+{
+  "run_list": [
+  "role[standalone_elasticsearch]"
+  ],
+  "environment": "standalone"
+}

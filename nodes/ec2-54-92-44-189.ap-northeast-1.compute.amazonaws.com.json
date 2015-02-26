@@ -1,6 +1,0 @@
-{
-  "run_list": [
-  "role[rproxy]"
-  ],
-  "fqdn": "ec2-54-92-44-189.ap-northeast-1.compute.amazonaws.com"
-}

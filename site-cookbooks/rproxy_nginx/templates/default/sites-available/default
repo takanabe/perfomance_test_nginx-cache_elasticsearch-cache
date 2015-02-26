@@ -1,0 +1,24 @@
+proxy_cache_path /tmp/nginx_cache levels=1:2 keys_zone=my-key:8m max_size=50m inactive=120m;
+
+server {
+  listen   80;
+  server_name 127.0.0.1;
+
+  location / {
+    root   /var/www/nginx-default;
+    index  index.html index.htm;
+  }
+}
+
+server {
+  server_name <%= node.name %>;
+
+  location / {
+    proxy_pass http://127.0.0.1:9200;
+    proxy_cache my-key;
+    proxy_cache_key $host$uri$is_args$args;
+    proxy_cache_valid 1h;
+    client_max_body_size 8M;
+    add_header X-Cache-Status $upstream_cache_status;
+  }
+}

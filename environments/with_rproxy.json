@@ -1,0 +1,12 @@
+{
+  "name": "with_rproxy",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+    "rails": {
+      "env": "with_rproxy"
+    },
+    "elasticsearch": {
+      "environment_domain_prefix": "with_nginx-"
+    }
+  }
+}

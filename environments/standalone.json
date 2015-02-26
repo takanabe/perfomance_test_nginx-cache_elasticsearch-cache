@@ -1,0 +1,12 @@
+{
+  "name": "standalone",
+  "json_class": "Chef::Environment",
+  "default_attributes": {
+    "rails": {
+      "env": "standalone"
+    },
+    "elasticsearch": {
+      "environment_domain_prefix": "standalone-"
+    }
+  }
+}
