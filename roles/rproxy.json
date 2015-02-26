@@ -2,7 +2,8 @@
   "name": "rproxy",
   "default_attributes": {
     "nginx": {
-      "default_site_enabled": false
+      "default_site_enabled": false,
+      "server_names_hash_bucket_size": 128
     }
   },
 
@@ -11,6 +12,6 @@
   "chef_type": "role",
   "run_list": [
     "nginx",
-    "recipe[ex1-nginx::default]"
+    "recipe[rproxy_nginx::default]"
   ]
 }

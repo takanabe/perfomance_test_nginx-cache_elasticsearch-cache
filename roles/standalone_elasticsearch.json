@@ -15,7 +15,8 @@
     "chef_type": "role",
     "run_list": [
         "recipe[elasticsearch]",
-        "recipe[elasticsearch::plugins]"
+        "recipe[elasticsearch::plugins]",
+        "recipe[standalone_elasticsearch]"
     ]
 }
 
