@@ -16,7 +16,7 @@
     "run_list": [
         "recipe[elasticsearch]",
         "recipe[elasticsearch::plugins]",
-        "recipe[standalone_elasticsearch]"
+        "recipe[standalone-elasticsearch]"
     ]
 }
 
